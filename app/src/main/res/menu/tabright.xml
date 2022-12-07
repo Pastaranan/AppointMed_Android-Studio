@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="">
+        <menu>
+        </menu>
+    </item>
+    <item
+        android:title="ผู้มีสิทธิ์ในการแก้ไขข้อมูล">
+        <menu>
+            <item
+                android:id="@+id/d"
+                android:icon="@drawable/d"
+                android:title="นาย คอคน" />
+            <item
+                android:id="@+id/e"
+                android:icon="@drawable/e"
+                android:title="ผู้มีสิทธิ์แก้ไขข้อมูล" />
+
+        </menu>
+    </item>
+    <item
+        android:title="ผู้มีสิทธิ์ดูข้อมูล">
+        <menu>
+            <item
+                android:id="@+id/f"
+                android:icon="@drawable/f"
+                android:title="นาย วอแหวน" />
+            <item
+                android:id="@+id/g"
+                android:icon="@drawable/g"
+                android:title="เด็กชาย ฮอฮูก" />
+            <item
+                android:id="@+id/h"
+                android:icon="@drawable/e"
+                android:title="เพิ่มผู้มีสิทธิ์ดูข้อมูล" />
+
+
+        </menu>
+    </item>
+
+
+</menu>

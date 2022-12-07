@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appointment"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="#13B2D7"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backchoose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backa"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fc_subject_regular"
+            android:text="ใบนัดทำแผล"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbarSize="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:layout_marginTop="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageappoint"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:src="@drawable/picture"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/fc_subject_regular"
+                        android:textColor="#7F7F7F"
+                        android:text="ข้อมูลส่วนตัว"/>
+
+                    <EditText
+                        android:id="@+id/HN"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:ems="10"
+                        android:paddingLeft="15dp"
+                        android:inputType="textPersonName"
+                        android:layout_marginTop="5dp"
+                        tools:ignore="TouchTargetSizeCheck"
+                        android:fontFamily="@font/fc_subject_regular"
+                        android:background="@drawable/bgtextdata"
+                        android:textColor="@color/text"
+                        android:textSize="15sp"
+                        android:text="80025613"
+                        android:hint="HN"/>
+
+                    <EditText
+                        android:id="@+id/Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:paddingLeft="15dp"
+                        android:text="นายดุลยวิชญ์ ปานกลาง"
+                        android:inputType="textPersonName"
+                        tools:ignore="TouchTargetSizeCheck"
+                        android:background="@drawable/bgtextdata"
+                        android:fontFamily="@font/fc_subject_regular"
+                        android:textColor="@color/text"
+                        android:textSize="15sp"
+                        android:hint="ชื่อ"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView86"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textSize="20dp"
+                    android:textColor="@color/text"
+                    android:layout_gravity="center_vertical"
+                    android:text="โรงพยาบาล :" />
+
+                <Spinner
+                    android:id="@+id/Spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drop_medicine"
+                    android:drawableLeft="@drawable/hos"
+                    android:drawableRight="@drawable/drop"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView89"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textSize="20dp"
+                    android:textColor="@color/text"
+                    android:layout_gravity="center_vertical"
+                    android:text="แผนก :" />
+
+                <Spinner
+                    android:id="@+id/Spinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drop_medicine"
+                    android:drawableLeft="@drawable/point"
+                    android:drawableRight="@drawable/drop"
+                    android:ems="10"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fc_subject_regular"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:layout_gravity="center_vertical"
+                android:text="วันที่และเวลานัดหมาย" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Dateappointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtextdata"
+                    android:ems="10"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:paddingVertical="10dp"
+                    android:hint="   วันที่"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/Timeappointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtextdata"
+                    android:ems="10"
+                    android:paddingVertical="10dp"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:hint="   เวลา"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/text" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fc_subject_regular"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:layout_gravity="center_vertical"
+                android:text="การแจ้งเตือน" />
+
+            <Spinner
+                android:id="@+id/Spinner9"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drop_medicine"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fc_subject_regular"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:layout_gravity="center_vertical"
+                android:text="รายละเอียดเพิ่มเติม" />
+
+            <EditText
+                android:id="@+id/Docter"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bgtextdata"
+                android:ems="10"
+                android:fontFamily="@font/fc_subject_regular"
+                android:hint=" แพทย์ผู้นัด"
+                android:text="นพ.ศรีสุข เรืองศักดิ์"
+                android:textSize="15sp"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName10"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bgtextdata"
+                android:ems="10"
+                android:fontFamily="@font/fc_subject_regular"
+                android:hint="  เบอร์ติดต่อโรงพยาบาล"
+                android:text="0845612379"
+                android:textSize="15sp"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName11"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bgtextdata"
+                android:ems="10"
+                android:textSize="15sp"
+                android:fontFamily="@font/fc_subject_regular"
+                android:hint="  รายละเอียดเพิ่มเติม"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fc_subject_regular"
+                android:text="ตำแหน่งแผล"
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="276dp"
+                android:layout_height="306dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/body" />
+
+            <Button
+                android:id="@+id/next_appoint"
+                android:layout_width="133dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bgbutton"
+                android:fontFamily="@font/fc_subject_regular"
+                android:text="ยืนยัน"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

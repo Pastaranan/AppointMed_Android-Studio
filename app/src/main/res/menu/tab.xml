@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="มุมมองการแสดงผล">
+        <menu>
+            <item
+                android:id="@+id/dey"
+                android:icon="@drawable/day"
+                android:title="วัน" />
+            <item
+                android:id="@+id/week"
+                android:icon="@drawable/week"
+                android:title="สัปดาห์" />
+            <item
+                android:id="@+id/month"
+                android:icon="@drawable/month"
+                android:title="เดือน" />
+        </menu>
+    </item>
+    <item
+        android:title="ผู้ป่วย">
+        <menu>
+            <item
+                android:id="@+id/A"
+                android:icon="@drawable/a"
+                android:title="นาย กอไก่" />
+            <item
+                android:id="@+id/B"
+                android:icon="@drawable/b"
+                android:title="นาง ขอไข่" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/medical"
+        android:title="ยาประจำตัว" />
+    <item
+        android:id="@+id/appoinment"
+        android:title="ใบนัด" />
+
+</menu>

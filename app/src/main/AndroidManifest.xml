@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test_api">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icons"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/app_icons_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test_API"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Add_Caretaker"
+            android:exported="true" />
+        <activity
+            android:name=".About_Caretaker"
+            android:exported="true" />
+        <activity
+            android:name=".Choose_Appointment_EN"
+            android:exported="true" />
+        <activity
+            android:name=".Appointment_EN"
+            android:exported="true" />
+        <activity
+            android:name=".About_Appointment_EN"
+            android:exported="true" />
+        <activity
+            android:name=".Map"
+            android:exported="true" />
+        <activity
+            android:name=".Appointment_continuously_hosa_2"
+            android:exported="true" />
+        <activity
+            android:name=".Appointment_continuously_hosa_1"
+            android:exported="true" />
+        <activity
+            android:name=".About_Medicine_3"
+            android:exported="true" />
+        <activity
+            android:name=".About_Medicine_2"
+            android:exported="true" />
+        <activity
+            android:name=".Caretaker"
+            android:exported="true" />
+        <activity
+            android:name=".Appointment_continue"
+            android:exported="true" />
+        <activity
+            android:name=".popup_appointment"
+            android:exported="true" />
+        <activity
+            android:name=".under_develope"
+            android:exported="true" />
+        <activity
+            android:name=".Add_appointment"
+            android:exported="true" />
+        <activity
+            android:name=".About_Appointment2"
+            android:exported="true" />
+        <activity
+            android:name=".Comming_Soon"
+            android:exported="true" />
+        <activity
+            android:name=".record"
+            android:exported="true" />
+        <activity
+            android:name=".Language"
+            android:exported="true" />
+        <activity
+            android:name=".Notification"
+            android:exported="true" />
+        <activity
+            android:name=".Graph"
+            android:exported="true" />
+        <activity
+            android:name=".Vital_Signs"
+            android:exported="true" />
+        <activity
+            android:name=".Menu"
+            android:exported="true" />
+        <activity
+            android:name=".About_Appointment"
+            android:exported="true" />
+        <activity
+            android:name=".About_Medicine"
+            android:exported="true" />
+        <activity
+            android:name=".Medicine"
+            android:exported="true" />
+        <activity
+            android:name=".Add_medicine"
+            android:exported="true" />
+        <activity
+            android:name=".Choose_appointment"
+            android:exported="true" />
+        <activity
+            android:name=".Navigation"
+            android:exported="true" />
+        <activity
+            android:name=".Appointment3"
+            android:exported="true" />
+        <activity
+            android:name=".Appointment2"
+            android:exported="true" />
+        <activity
+            android:name=".Appointment"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC-TSN4pkFulM1NI4KcHjGIChuAdr2_jII" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

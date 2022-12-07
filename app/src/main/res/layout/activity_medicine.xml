@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Medicine"
+    android:background="#F2F2F2">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="#35CDC1"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/backa"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fc_subject_regular"
+            android:text="เพิ่มยาประจำตัว"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imagemedicine"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:src="@drawable/picture"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/fc_subject_regular"
+                        android:textColor="#7F7F7F"
+                        android:text="รายละเอียดยา"/>
+
+                    <EditText
+                        android:id="@+id/medicinename"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:ems="10"
+                        android:paddingLeft="15dp"
+                        android:inputType="textPersonName"
+                        android:layout_marginTop="5dp"
+                        tools:ignore="TouchTargetSizeCheck"
+                        android:fontFamily="@font/fc_subject_regular"
+                        android:background="@drawable/bgtextdata"
+                        android:textColor="@color/text"
+                        android:textSize="15sp"
+                        android:text="ยาลดน้ำมูก"
+                        android:hint="ชื่อยา"/>
+
+                    <EditText
+                        android:id="@+id/Medicine_amount_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:text="500 mg"
+                        android:paddingLeft="15dp"
+                        android:inputType="textPersonName"
+                        tools:ignore="TouchTargetSizeCheck"
+                        android:background="@drawable/bgtextdata"
+                        android:fontFamily="@font/fc_subject_regular"
+                        android:textColor="@color/text"
+                        android:textSize="15sp"
+                        android:hint="ปริมาณยา"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="กลุ่มยา"
+                android:fontFamily="@font/fc_subject_regular"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+            <Spinner
+                android:id="@+id/Spinner10"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drop_medicine"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แจ้งเตือน"
+                android:fontFamily="@font/fc_subject_regular"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+            <Spinner
+                android:id="@+id/Spinner4"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drop_medicine"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/Timemedicine"
+                    android:layout_width="378dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtextdata"
+                    android:ems="10"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:hint="   เวลา"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/Spinner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textSize="15sp"
+                    android:inputType="textPersonName"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/drop_medicine"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textColor="@color/text" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="#D9D9D9" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รายละเอียด"
+                android:fontFamily="@font/fc_subject_regular"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:text="เริ่มต้น    :" />
+
+                <TextView
+                    android:id="@+id/Datemedicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtextdata"
+                    android:ems="10"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:hint="   วันที่"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textSize="20dp"
+                    android:text="ระยะเวลา :" />
+                <Spinner
+                    android:id="@+id/Spinner6"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/drop_medicine"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textColor="@color/text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textSize="20dp"
+                    android:text="ความถี่    :" />
+                <Spinner
+                    android:id="@+id/Spinner7"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/drop_medicine"
+                    android:spinnerMode="dropdown"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textColor="@color/text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textSize="20dp"
+                    android:text="วิธีใช้ยา   :" />
+                <Spinner
+                    android:id="@+id/Spinner8"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/drop_medicine"
+                    android:spinnerMode="dropdown"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/fc_subject_regular"
+                    android:textColor="@color/text"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="#D9D9D9" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รายละเอียด"
+                android:fontFamily="@font/fc_subject_regular"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/m" />
+
+            <Button
+                android:id="@+id/nextm"
+                android:layout_width="133dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bgbutton"
+                android:fontFamily="@font/fc_subject_regular"
+                android:text="ยืนยัน"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

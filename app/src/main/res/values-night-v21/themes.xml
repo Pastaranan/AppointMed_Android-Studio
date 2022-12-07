@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Test_API" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/appointmed</item>
+        <item name="colorPrimaryDark">@color/appointmed</item>
+        <item name="colorAccent">@color/appointmed</item>
+        <item name="android:statusBarColor">@color/appointmed</item>
+        <item name="font">@font/fc_subject_regular</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
